@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Technical_Documentation</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navbar header -->
+        <nav id="navbar" class="d-flex d-flex--col">
+            <header class="title">Basic CSS Documentation</header>
+            <ul class="navbar__ul">
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Css_Syntax">Css Syntax</a></li>
+                <li><a class="nav-link" href="#How_To">How To</a></li>
+                <li><a class="nav-link" href="#Align">Align</a></li>
+                <li><a class="nav-link" href="#Margin">Margin</a></li>
+                <li><a class="nav-link" href="#Padding">Padding</a></li>
+                <li><a class="nav-link" href="#Height">Height</a></li>
+                <li><a class="nav-link" href="#Width">Width</a></li>
+                <li><a class="nav-link" href="#Border">Border</a></li>
+                <li><a class="nav-link" href="#Box_Model">Box Model</a></li>
+                <li><a class="nav-link" href="#Website_Layout">Website Layout</a></li>
+                <li><a class="nav-link" href="#Positioning">Positioning</a></li>
+                <li><a class="nav-link" href="#Display">Display</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <!-- Main-section -->
+            <main id="main-doc">
+                <!-- Introduction -->
+                <section id="Introduction" class="main-section">
+                    <header>Introduction</header>
+                    <article>
+                        <p>
+                            CSS is a language that describes the style of an HTML document.
+                            CSS describes how HTML elements should be displayed. This
+                            tutorial will teach you CSS from basic to advanced. Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Necessitatibus
+                            aperiam quam eum velit sequi quo sit cum quia, delectus impedit!
+                        </p>
+                        <h3>What is CSS?</h3>
+                        <ul class="list-bullet">
+                            <li>CSS stands for Cascading Style Sheets</li>
+                            <li>
+                                CSS describes how HTML elements are to be displayed on screen,
+                                paper, or in other media
+                            </li>
+                            <li>External stylesheets are stored in CSS files</li>
+                            <li>
+                                CSS saves a lot of work. It can control the layout of multiple
+                                web pages all at once
+                            </li>
+                        </ul>
+                        <h5>Test your CSS skills at W3Schools!</h5>
+                        <a href="https://www.w3schools.com/css/css_quiz.asp">Test link..w3school</a>
+                        <p>
+                            This CSS tutorial contains hundreds of CSS examples. With our
+                            online editor, you can edit the CSS, and click on a button to
+                            view the result. Lorem ipsum dolor sit amet consectetur a
+                            dipisicing elit. Vero optio ratione impedit tempora ex! Vel
+                            blanditiis cupiditate tenetur excepturi aspernatur? Lorem ipsum
+                            dolor, sit amet consectetur adipisicing elit. Quos beatae
+                            dolorum ad sint voluptas sunt asperiores nihil corporis facilis
+                            delectus!
+                        </p>
+                        <h5>css example</h5>
+                        <code class="code-style">
+                            body { background-color: lightblue; } <br />
+
+                            h1 { color: white; text-align: center; } <br />
+
+                            p { font-family: verdana; font-size: 20px; }
+                        </code class="code-style">
+                    </article>
+                </section>
+                <!-- Css-Syntax -->
+                <section id="Css_Syntax" class="main-section">
+                    <header>Css Syntax</header>
+                    <article>
+                        <img src="image/syntax.gif" alt="syntax image" />
+                        <figcaption>Fig:syntax image</figcaption>
+                        <p>
+                            A CSS rule-set consists of a selector and a declaration block:
+                            The id Selector The id selector uses the id attribute of an HTML
+                            element to select a specific element. The id of an element
+                            should be unique within a page, so the id selector is used to
+                            select one unique element! To select an element with a specific
+                            id, write a hash (#) character, followed by the id of the
+                            element.
+                        </p>
+                        <h3>Css-Selector</h3>
+                        CSS Selectors CSS selectors are used to "find" (or select) HTML
+                        elements based on their element name, id, class, attribute, and
+                        more.
+                        <h3>Element Selector</h3>
+                        <code class="code-style">
+                            p {
+                            text-align: center;
+                            color: red;
+                            }
+                        </code class="code-style">
+                        <code><em>You can select all <<span>P></span> elements on a page like this</em></code>
+                        <h3>Class Selector</h3>
+                        <p>The class selector selects elements with a specific class attribute.
+                            To select elements with a specific class, write a period (.) character, followed by the name
+                            of the class.</p>
+                        <code class="code-style">
+                            .center {
+                            text-align: center;
+                            color: red;
+                            }
+                        </code>
+                        <code><em>In this example all HTML elements with class="center" will be red and center-aligned:
+                            </em></code>
+                        <h3>Id Selector</h3>
+                        <code class="code-style">
+                            #para1 {
+                            text-align: center;
+                            color: red;
+                            }
+                        </code>
+                        <code>Note: An id name cannot start with a number!</code>
+                    </article>
+                </section>
+                <!-- How To -->
+                <section id="How_To" class="main-section">
+                    <header>How To</header>
+                    <article>
+                        <p>
+                            When a browser reads a style sheet, it will format the HTML
+                            document according to the information in the style sheet. Lorem
+                            ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+                            asperiores delectus fugiat porro, pariatur quas vitae temporibus
+                            alias deserunt et!
+                        </p>
+                        <h3>Three Ways to use CSS Syntax</h3>
+                        <ul class="list-bullet">
+                            <li>External style sheet</li>
+                            <li>Internal style sheet</li>
+                            <li>Inline style</li>
+                        </ul>
+                        <h3>External Style Sheet</h3>
+                        <code class="code-style">
+                            <<span>head></span> <br>
+                                <<span>link rel="stylesheet" type="text/css" href="mystyle.css"></span><br>
+                                </<span>head></span>
+                        </code>
+                        <code> External styles are defined within the <<span>link></span> element,
+                                inside the <<span>head></span> section of an HTML page:</head></code>
+                        <p>An external style sheet can be written in any text editor. The file should not contain
+                            any html tags. The style sheet file must be saved with a .css extension.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore consequatur
+                            reprehenderit placeat voluptas nisi illo officiis minima vero Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Aspernatur, officiis! </p>
+                    </article>
+                </section>
+                <!-- Align -->
+                <section id="Align" class="main-section">
+                    <header>Align</header>
+                    <article>
+                        <h3>Alignment in css</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugit consectetur provident rem enim velit
+                            a laborum ipsum esse cupiditate dicta? Lorem ipsum dolor sit
+                            amet consectetur, adipisicing elit. Illo sed ex explicabo! Aliquid
+                            a iure nesciunt eveniet quae iusto corporis?</p>
+                        <p> To horizontally center a block element <<span>div></span> , use margin: auto;
+                                Setting the width of the element will prevent it from stretching out to the edges of its
+                                container.
+                                The element will then take up the specified width, and the remaining space will be split
+                                equally between the two margins:
+                        </p>
+                        <code class="code-style code-blue">
+                            .center {
+                            margin: auto;
+                            width: 50%;
+                            border: 3px solid green;
+                            padding: 10px;
+                            } <br>
+                            img {
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 40%;
+                            }
+                        </code>
+                        <code>Center align class & img</code>
+                    </article>
+                </section>
+                <!-- Margin -->
+                <section id="Margin" class="main-section">
+                    <header>Margin</header>
+                    <article>
+                        <p>Margin is another css property Lorem ipsum, dolor
+                            sit amet consectetur adipisicing elit. Unde ipsa nemo
+                            quibusdam officia beatae non iure voluptates laudantium
+                            deserunt corrupti, maxime reprehenderit
+                            rerum eius explicabo dolor ut quis nobis molestiae. </p>
+                    </article>
+                </section>
+                <!-- Padding -->
+                <section id="Padding" class="main-section">
+                    <header>Padding</header>
+                    <article>
+                        <p>Padding Lorem, ipsum dolor sit amet consectetur a
+                            dipisicing elit. Iusto deleniti dolorem rem! At
+                            deleniti perferendis maiores quibusdam laborum, ab earum,
+                            debitis, odio dolores
+                            ratione ducimus quae ad veritatis quo itaque. </p>
+                        <h3> CSS has properties for specifying the padding for each side of an element:</h3>
+                        <ul class="list-bullet">
+                            <li>padding-top</li>
+                            <li>padding-right</li>
+                            <li>padding-bottom</li>
+                            <li>padding-left</li>
+                        </ul>
+                    </article>
+                </section>
+                <!-- Height -->
+                <section id="Height" class="main-section">
+                    <header>Height</header>
+                    <article>
+                        <p>Height property Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Non dolores, expedita doloribus at accusantium,
+                            commodi fugiat iure impedit soluta numquam facilis enim
+                            praesentium temporibus, accusamus neque quos? Praesentium
+                            debitis, quia itaque veritatis non voluptate
+                            blanditiis vel, quos numquam expedita facere?</p>
+                    </article>
+                </section>
+                <!-- Width -->
+                <section id="Width" class="main-section">
+                    <header>Width</header>
+                    <article>
+                        <p>As mentioned in the previous chapter; a block-level element
+                            always takes up the full width available (stretches out to the left and right as far as it
+                            can).
+                            Setting the width of a block-level element will prevent it from
+                            stretching out to the edges of its container. Then, you can set the margins to auto,
+                            to horizontally center the element within its container. The element will take up the
+                            specified
+                            width,
+                            and the remaining space will be split equally between the two margins:</p>
+                        <code class="code-style">
+                            div.ex1 {
+                            width: 500px;
+                            margin: auto;
+                            border: 3px solid #73AD21;
+                            } <br>
+
+                            div.ex2 {
+                            max-width: 500px;
+                            margin: auto;
+                            border: 3px solid #73AD21;
+                            }
+                        </code>
+                    </article>
+                </section>
+                <!-- Border -->
+                <section id="Border" class="main-section">
+                    <header>Border</header>
+                    <article>
+                        <p> Border css property Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Porro corrupti non voluptates quae velit vero adipisci similique
+                            alias minus a officiis repudiandae obcaecati ipsa,
+                            numquam quas earum magnam cumque architecto. </p>
+                    </article>
+                </section>
+                <!-- Box model -->
+                <section id="Box_Model" class="main-section">
+                    <header>Box Model</header>
+                    <article>
+                        <p>All HTML elements can be considered as boxes. In CSS, the term "box model" is
+                            used when talking about design and layout.
+                            The CSS box model is essentially a box that wraps around every HTML
+                            element. It consists of: margins, borders, padding,
+                            and the actual content. The image below illustrates the box model:</p>
+
+                        <h5>Different box model</h5>
+                        <ul class="list-bullet">
+                            <li>Content - The content of the box, where text and images appear</li>
+                            <li>Content - The content of the box, where text and images appear</li>
+                            <li>Padding - Clears an area around the content. The padding is transparent</li>
+                            <li>Border - A border that goes around the padding and content</li>
+                            <li>Margin - Clears an area outside the border. The margin is transparent</li>
+                        </ul>
+                    </article>
+                </section>
+                <!-- Website Layout -->
+                <section id="Website_Layout" class="main-section">
+                    <header>Website Layout</header>
+                    <article>
+                        <ul class="list-bullet">
+                            <li>1-column (often used for mobile browsers)</li>
+                            <li>2-column (often used for tablets and laptops)</li>
+                            <li>3-column layout (only used for desktops)</li>
+                        </ul>
+                        <code class="code-style code-blue">
+                            Tip: To create a 2-column layout, change the width to 50%. To create a 4-column layout, use
+                            25%, etc. <br>
+                            Tip: Do you wonder how the @media rule works? Read more about it in our CSS Media Queries
+                            chapter. <br>
+                            Tip: A more modern way of creating column layouts, is to use CSS Flexbox. However,
+                            it is not supported in Internet Explorer 10 and earlier versions.
+                            If you require IE6-10 support, use floats (as shown above). <br>
+                            To learn more about the Flexible Box Layout Module, read our CSS Flexbox chapter.
+                        </code>
+                    </article>
+                </section>
+                <!-- Positioning -->
+                <section id="Positioning" class="main-section">
+                    <header>Positioning</header>
+                    <article>
+                        <p>The position Property
+                            The position property specifies the type of positioning method used for an element.
+                            There are five different position values:</p>
+                        <ul class="list-bullet">
+                            <li>static></li>
+                            <li>relative</li>
+                            <li>fixed</li>
+                            <li>absolute</li>
+                            <li>sticky</li>
+                        </ul>
+                        <h3>Example-Position Relative</h3>
+                        <code class="code-style">
+                            div.relative { <br>
+                            position: relative;<br>
+                            left: 30px; <br>
+                            border: 3px solid #73AD21;
+                            }
+                        </code>
+                        <figcaption> <i><a href="https://www.w3schools.com/css/css_positioning.asp">More
+                                    examples..link</a></i></figcaption>
+                    </article>
+                </section>
+                <!-- Display -->
+                <section id="Display" class="main-section">
+                    <header>Display</header>
+                    <article>
+                        <p> The display property specifies if/how an element is displayed.
+                            Every HTML element has a default display value depending on
+                            what type of element it is. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptatibus, aperiam?psum dolor sit amet consectetur adipisicing elit.
+                            Iste, sequi.
+                        </p>
+                        <h5>Default display value for most elements </h5>
+                        <ul class="list-bullet">
+                            <li>Block</li>
+                            <li>inline</li>
+                        </ul>
+                    </article>
+                </section>
+                <!-- Reference Section -->
+                <section id="Reference">
+                    <h5>Reference</h5>
+                    <p>Contents taken from w3schools</p>
+                </section>
+            </main>
+        </div>
+        <!-- container ends -->
+    </div>
+    <!-- wrapper ends -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

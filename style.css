@@ -1,0 +1,189 @@
+        /* css variable */
+        :root {
+            --color-white: #fff;
+            --color-dark: #333;
+            --color-medium: #515151;
+            --color-light: #b3b0b0;
+            --color-silver: #dee1e4;
+            --color-green: #17f5d7;
+            
+            --bg-light: #e4e1e1;
+            --bg-dark: #666363;
+            --bg-blue: dodgerblue;
+            --bg-white: #fff;
+        }
+        /* Resetting style */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            color: var(--color-dark, #333);
+            line-height: 2rem;
+            margin-bottom: 0.8rem;
+            padding-top: 0.5rem;
+        }
+        h4,
+        h5 {
+            color: var(--color-medium);
+        }
+        ul {
+            list-style-type: none;
+        }
+        .list-bullet {
+            list-style-type: square;
+            padding-left: 2rem;
+        }
+        
+        li {
+            margin-left: 1rem;
+        }
+        a {
+            text-decoration: none;
+            color: dodgerblue;
+        }
+        a:hover {
+            color: purple;
+        }
+        
+        p {
+            padding: 0.3rem;
+        }
+        header,
+        section,
+        main {
+            display: block;
+        }
+        header {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            padding: 0.5rem;
+        }
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: "Open Sans Condensed", sans-serif, "Arial Narrow", Arial, serif;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            background: var(--bg-light);
+            color: var(--color-medium);
+            font-weight: normal;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Navigation bar..............rules */
+        #navbar {
+            width: 100vw;
+            height: 40vh;
+            background: var(--bg-blue);
+            /* position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999; */
+            padding: 0.8rem 1.5rem;
+        }
+        .navbar__ul {
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .nav-link {
+            color: var(--color-white);
+            text-transform: uppercase;
+        }
+        
+        .nav-link:hover {
+            color: var(--color-silver);
+        }
+        .title {
+            color: var(--bg-white);
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-shadow: 1px 1px 4px white;
+            padding-bottom: 1.2rem;
+        }
+        /* wrapper around main section */
+        .container {
+            position: relative;
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 0rem 2rem 5rem 2rem;
+        }
+        /* bottom Spacing each section */
+        .main-section {
+            padding-bottom: 3rem;
+        }
+        /* Code rules */
+        .code-style {
+            display: block;
+            width: 100%;
+            background: var(--color-white);
+            border-left: 5px solid var(--bg-blue);
+            padding: 0.5rem;
+            overflow-y: auto;
+        }
+        /* For note section */
+        .code-blue {
+            height: 150px;
+            background: #a4dff1;
+            padding: 1rem;
+            overflow-y: auto;
+        }
+        
+        /* Flex layout */
+        .d-flex {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            text-align: left;
+        }
+        
+        .d-flex--col {
+            flex-direction: column;
+        }
+        
+        /*For screen above700px..... 2 column */
+        @media (min-width: 768px) {
+          /* Grid Layout */
+          .wrapper {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-gap: 10px;
+          }
+      
+          /* Grid column-1 : navbar */
+          #navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 30vw;
+                grid-column: 1;
+          }
+      
+          /* Grid column-2:main container */
+          .container {
+                grid-column: 2;
+                padding: 2.5rem 1rem 15rem 1rem;
+                max-width: 90%;
+          }
+        }
+        
